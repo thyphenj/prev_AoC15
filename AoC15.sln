@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-ElvesLookElvesSay", "10-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-CorporatePolicy", "11-CorporatePolicy\11-CorporatePolicy.csproj", "{82554F80-2B56-41FC-8E09-48F351BF264B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-JSAbacusFramework.io", "12-JSAbacusFramework.io\12-JSAbacusFramework.io.csproj", "{FBD4160F-06F0-416E-B8F1-C4FF48DBE87E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-KnightsOfTheDinnerTable", "13-KnightsOfTheDinnerTable\13-KnightsOfTheDinnerTable.csproj", "{C8C8CB43-E70B-45A5-A693-9B3DD5A37D73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{82554F80-2B56-41FC-8E09-48F351BF264B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82554F80-2B56-41FC-8E09-48F351BF264B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82554F80-2B56-41FC-8E09-48F351BF264B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBD4160F-06F0-416E-B8F1-C4FF48DBE87E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBD4160F-06F0-416E-B8F1-C4FF48DBE87E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBD4160F-06F0-416E-B8F1-C4FF48DBE87E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBD4160F-06F0-416E-B8F1-C4FF48DBE87E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C8CB43-E70B-45A5-A693-9B3DD5A37D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C8CB43-E70B-45A5-A693-9B3DD5A37D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C8CB43-E70B-45A5-A693-9B3DD5A37D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C8CB43-E70B-45A5-A693-9B3DD5A37D73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
