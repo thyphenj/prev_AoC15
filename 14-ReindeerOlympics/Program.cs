@@ -37,13 +37,13 @@ namespace _14_ReindeerOlympics
                     }
                 }
                 leader.AddPoint();
-                Console.WriteLine($"{secs,5}   leader - {leader,10} - points - {leader.Points}");
+                Console.WriteLine($"{secs,5}   leader - {leader,10} - points - {leader.GetPoints}");
             }
 
             Console.WriteLine();
             foreach (Deer deer in deers)
             {
-                Console.WriteLine($"{deer,10} points={deer.Points,4}");
+                Console.WriteLine($"{deer,10} points={deer.GetPoints,4}");
             }
 
         }

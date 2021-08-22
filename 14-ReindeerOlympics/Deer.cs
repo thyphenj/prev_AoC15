@@ -3,29 +3,29 @@ namespace _14_ReindeerOlympics
 {
     class Deer
     {
-        private string _name;
-        private int _speed;
-        private int _flight;
-        private int _rest;
-        private int _distance;
-        private int _point;
-        public int Dist { get { return _distance; } }
-        public int Points { get { return _point; } }
+        private string Name;
+        private int Speed;
+        private int Flight;
+        private int Rest;
+        private int Distance;
+        private int Points;
+        public int Dist { get { return Distance; } }
+        public int GetPoints { get { return Points; } }
 
         public Deer(string name, int speed, int flight, int rest, int time)
         {
-            _name = name;
-            _speed = speed;
-            _flight = flight;
-            _rest = rest;
+            Name = name;
+            Speed = speed;
+            Flight = flight;
+            Rest = rest;
 
-            _distance = _part1_distance(time);
+            Distance = _part1_distance(time);
 
-            _point = 0;
+            Points = 0;
         }
         private int _part1_distance(int time)
         {
-            int phaseTime = _flight + _rest;
+            int phaseTime = Flight + Rest;
 
             int phases = 0;
             while (time > phaseTime)
@@ -34,31 +34,31 @@ namespace _14_ReindeerOlympics
                 phases++;
             }
 
-            if (time > _flight)
-                time = _flight;
+            if (time > Flight)
+                time = Flight;
 
-            int retval = (time + (phases * _flight)) * _speed;
+            int retval = (time + (phases * Flight)) * Speed;
 
             return retval;
         }
 
         public int Position(int secs)
         {
-            int phases = secs / (_flight + _rest);
-            int rem = secs % (_flight + _rest);
-            if (rem <= _flight)
-                return (phases * _flight + rem) * _speed;
+            int phases = secs / (Flight + Rest);
+            int rem = secs % (Flight + Rest);
+            if (rem <= Flight)
+                return (phases * Flight + rem) * Speed;
             else
-                return (phases * _flight + _flight) * _speed;
+                return (phases * Flight + Flight) * Speed;
         }
 
         public void AddPoint()
         {
-            _point++;
+            Points++;
         }
         public override string ToString()
         {
-            return $"{_name,10}   -   {_distance}";
+            return $"{Name,10}   -   {Distance}";
         }
     }
 
