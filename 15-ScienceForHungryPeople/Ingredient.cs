@@ -13,7 +13,8 @@ namespace _15_ScienceForHungryPeople
 
         public Ingredient(string line)
         {
-            Name = line.Substring(0, line.IndexOf(':'));
+            Name = line.Substring(0, line.IndexOf(':')).Trim();
+
             string[] atoms = line.Split(':')[1].Split(',');
 
             Capacity = int.Parse(atoms[0].Trim().Split(' ')[1]);
