@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16-AuntSue", "16-AuntSue\16
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17-NoSuchThingAsTooMuch", "17-NoSuchThingAsTooMuch\17-NoSuchThingAsTooMuch.csproj", "{15100A29-0B41-4EB6-B310-91B26F35BDCC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18-LikeAGigForYourYard", "18-LikeAGigForYourYard\18-LikeAGigForYourYard.csproj", "{74179E2C-490C-4BA7-9079-ACC504C316FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{15100A29-0B41-4EB6-B310-91B26F35BDCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15100A29-0B41-4EB6-B310-91B26F35BDCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15100A29-0B41-4EB6-B310-91B26F35BDCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74179E2C-490C-4BA7-9079-ACC504C316FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74179E2C-490C-4BA7-9079-ACC504C316FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74179E2C-490C-4BA7-9079-ACC504C316FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74179E2C-490C-4BA7-9079-ACC504C316FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

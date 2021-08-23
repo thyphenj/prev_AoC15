@@ -38,10 +38,24 @@ namespace _17_NoSuchThingAsTooMuch
                     answers.Add(i);
             }
 
-            Console.WriteLine(answers.Count);
+            Console.WriteLine($"Part one - {answers.Count}");
 
+            int count = 0;
             foreach (var s in answers)
-                Console.WriteLine(Convert.ToString(s, 2));
+            {
+                int bitCount = 0;
+                for (int j = 0; j < containers.Length; j++)
+                {
+                    if ((s & (1 << j)) != 0)
+                        bitCount++;
+                }
+                if (bitCount == 4)
+                    count++;
+
+                //                Console.WriteLine($"{Convert.ToString(s, 2)} - {bitCount,2}");
+            }
+
+            Console.WriteLine($"Part two - {count}");
         }
     }
 }
