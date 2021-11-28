@@ -1,24 +1,20 @@
-﻿using System;
+﻿
+using System;
 using System.IO;
 using System.Collections.Generic;
 
 namespace _19_MedicineForRudolph
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            HashSet<string> modified = new HashSet<string>();
+
             List<Transform> transforms = new List<Transform>();
 
-            string[] input = File.ReadAllLines("input.txt");
-
-            string mole = ParseMolecule(input[^1]);
-
-            foreach (string str in mole.Split(' '))
-            {
-                Console.Write($"{str} ");
-            }
-            Console.WriteLine("\n\n");
+            //string[] input = File.ReadAllLines("input.txt");
+            string[] input = GetTestData();
 
             int j = 0;
             while (input[j].Trim().Length > 0)
@@ -26,15 +22,22 @@ namespace _19_MedicineForRudolph
                 transforms.Add(new Transform(input[j++]));
             }
 
-            //foreach (var t in transforms)
-            //{
-            //    Console.WriteLine(t);
-            //}
-            //Console.WriteLine();
+            string mole = ParseMolecule(input[++j]);
+
+            foreach (string str in mole.Split(' '))
+            {
+                Console.Write($"{str} ");
+            }
+            Console.WriteLine("\n\n");
 
         }
 
-        static string ParseMolecule(string molecule)
+        private static string[] GetTestData ()
+        {
+            return new string[] { "H => HO", "H => OH", "O => HH", "", "HOH" };
+        }
+
+        private static string ParseMolecule(string molecule)
         {
             string retval = "";
 
