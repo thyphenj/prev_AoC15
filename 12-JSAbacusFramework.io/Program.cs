@@ -10,43 +10,42 @@ namespace _12_JSAbacusFramework.io
 
         static void Main(string[] args)
         {
-            //Console.WriteLine("12-JSAbacusFramework.io\n-------------------------------- Part 1");
-            //{
-            //input = File.ReadAllText("input.json");
+            Console.WriteLine("12-JSAbacusFramework.io\n-------------------------------- Part 1");
+            {
+                input = File.ReadAllText("input.json");
 
-            //int i = 0;
-            //int sum = 0;
-            //while (i < input.Length)
-            //{
-            //    if ((input[i] >= '0' && input[i] <= '9') || input[i] == '-')
-            //    {
-            //        // Parse out the number
-            //        string n = "" + (char)input[i++];
-            //        while (i < input.Length && input[i] >= '0' && input[i] <= '9')
-            //        {
-            //            n += (char)input[i++];
-            //        }
-            //        int num = int.Parse(n);
-            //        sum += num;
-            //        //                        Console.WriteLine($"{num,6}");
-            //    }
-            //    else
-            //        i++;
-            //}
+                int i = 0;
+                int sum = 0;
+                while (i < input.Length)
+                {
+                    if ((input[i] >= '0' && input[i] <= '9') || input[i] == '-')
+                    {
+                        // Parse out the number
+                        string n = "" + (char)input[i++];
+                        while (i < input.Length && input[i] >= '0' && input[i] <= '9')
+                        {
+                            n += (char)input[i++];
+                        }
+                        int num = int.Parse(n);
+                        sum += num;
+                    }
+                    else
+                        i++;
+                }
 
-            //Console.WriteLine(sum);
-            //}
+                Console.WriteLine(sum);
+            }
 
             Console.WriteLine("\n-------------------------------- Part 2");
             {
                 input = File.ReadAllText("input.txt");
-                //input = "[1,{\"c\":\"red\",\"b\":2},3]";
+                input = "[1,{\"c\":\"red\",\"b\":2},3]";
                 //input = "\"Hello World\",";
 
                 Console.WriteLine("         1         2         3");
                 Console.WriteLine(input);
 
-                EvalInput();
+                Console.WriteLine(EvalInput()); ;
 
             }
         }
